@@ -12,7 +12,7 @@ html{
 /*SECCION INICIO */
 .inicio{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-    url("/fondo.jpg");
+    url("../nonbinaries/fondo.jpg");
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -30,7 +30,8 @@ html{
     text-align: left;
     z-index: 99;
     display: none;
-}   
+}
+
 
 .inicio .contenido-seccion header nav a{
     display: block;
@@ -58,6 +59,7 @@ html{
     border-radius: 50%;
     line-height: 50px;
     cursor: pointer;
+    text-align: center;
     transition: .3s;
 }
 .inicio .contenido-seccion header .nav-bar:hover{
@@ -67,10 +69,11 @@ html{
     padding-bottom: 130px;
 }
 .inicio .contenido-seccion .info h1{
+    font-weight: normal;
     font-size: 3rem;
     letter-spacing: 5px;
 }
-.inicio .contenido-seccion .info h2{
+.inicio .contenido-seccion .info h2,h3{
     font-weight: normal;
     font-size: 20px;
     margin-top: -10px;
@@ -78,6 +81,7 @@ html{
 }
 .inicio .contenido-seccion .info .redes {
     margin: 20px 0;
+    text-align: center;
 }
 .inicio .contenido-seccion .info .redes a {
     display: inline-block;
@@ -116,18 +120,17 @@ html{
 }
 
 
-
 /*SECCION SOBRE MI*/
 .sobremi{
     background-color: #e6e6e6;
-    padding: 140px 0 100px 0;
+    padding: 60px 0 100px 0;
     text-align: center;
 }
 
 .sobremi .contenido-seccion{
     max-width: 1000px;
     margin: auto;
-    padding: 0 10px;
+    padding: 0 2px;
 }
 .sobremi .contenido-seccion h3{
     text-transform: uppercase;
@@ -169,10 +172,10 @@ html{
 
 /*SECCION HABILIDADES*/
 .habilidades{
-    padding: 80px 0 100px 0;
+    padding: 60px 0 100px 0;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-    url("/habilidades.jpg");
+    url("../nonbinaries/habilidades.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -182,11 +185,19 @@ html{
     max-width: 1000px;
     margin: auto;
     padding: 0 10px;
+    color: whitesmoke;
+}
+
+.habilidades .contenido-seccion .titulo-seccion{
+    font-size: 30px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    color: whitesmoke;
 }
 
 .habilidades .contenido-seccion h3{
-    text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
 }
 .habilidades .contenido-seccion .fila{
     display: flex;
@@ -200,6 +211,8 @@ html{
 .habilidades .contenido-seccion .fila .col .cont-barra{
     display: flex;
     align-items: center;
+    /*color: whitesmoke;*/
+    
 }
 .habilidades .contenido-seccion .barra{
     display: flex;
@@ -218,14 +231,14 @@ html{
 
 .resumen{
     background-color: #e6e6e6;
-    padding: 140px 0 100px 0;
+    padding: 60px 0 100px 0;
     text-align: center;
 }
 .resumen .contenido-seccion{
     max-width: 1000px;
     margin:auto;
 }
-.resumen .contenido-seccion h3{
+.resumen .contenido-seccion h2{
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -236,7 +249,8 @@ html{
     margin-top: 30px;
 }
 .resumen .contenido-seccion .info .col{
-   width: 45%;
+    table-layout: fixed;
+    width: 450px;
 }
 .resumen .contenido-seccion .info .col .titulo{
     display: inline-block;
@@ -246,13 +260,21 @@ html{
     padding: 10px;
  }
  .resumen .contenido-seccion .info .col .table{
-    margin-top: 30px;
-    border-collapse: collapse;
+    margin-top: 15px;
+    margin-left: 10px;
+
  }
  .resumen .contenido-seccion .info .col .table .datos{
-    width: 40%;
+    width: 80%;
     border-bottom: 1px solid #bab9bb ;
  }
+
+.resumen .contenido-seccion .info .col .table th,td{
+   width: 350px;
+   border-bottom: 1px solid #bab9bb ;
+}
+
+ /*
  .resumen .contenido-seccion .info .col .table h4{
     margin-top: 10px;
  }
@@ -260,6 +282,7 @@ html{
     font-size: 20px;
     margin-top: 5px;
  }
+ 
  .resumen .contenido-seccion .info .col .table p{
     font-size: 14px;
  }
@@ -277,26 +300,30 @@ html{
  /*SECCION CONTACTO*/
  .contacto{
     background-color: #202020;
-    padding: 140px 0 100px 0;
+    padding: 60px 0 80px 0;
     color: #e6e6e6;
     text-align: center;
  }
  .contacto  .contenido-seccion{
-    max-width: 100px;
+    max-width: 450px;
     margin:auto;
     padding: 0 10px;
  }
  .contacto  .contenido-seccion h3{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
  }
  .contacto  .contenido-seccion .fila{
+    width: 650px;
     display: flex;
     justify-content: space-around;
  }
  .contacto  .contenido-seccion .fila .col{
-    margin-top: 50px;
+    width: 650px;
+    display:inline-block;
+    margin-top: 40px;
  }
+
  .contacto  .contenido-seccion .fila h2{
     color: #940253;
  }
